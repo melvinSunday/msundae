@@ -13,7 +13,7 @@ const Navbar = () => {
           m.sundae
         </h1>
       </div>
-      <div className="m-8 flex items-center justify-content gap-4 text-2xl">
+      <div className="m-8 mr-0 flex items-center justify-content gap-4 text-2xl">
         <a
           href="https://www.facebook.com/tezuka.kunimtsu.5/"
           target="_blank"
