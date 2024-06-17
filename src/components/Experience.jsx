@@ -1,7 +1,9 @@
+import React from "react";
 import { EXPERIENCES } from "../constants";
 import { motion } from "framer-motion";
+import classNames from "classnames";
 
-const Experience = () => {
+const Experience = ({ theme }) => {
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2
@@ -22,7 +24,12 @@ const Experience = () => {
                 transition={{ duration: 1 }}
                 className="w-full lg:w-1/4"
               >
-                <p className="mb-2 text-sm text-neutral-400">
+                <p
+                  className={classNames("mb-2 text-sm", {
+                    "text-neutral-400": theme === "dark",
+                    "text-neutral-700": theme === "light",
+                  })}
+                >
                   {experience.year}
                 </p>
               </motion.div>
@@ -34,18 +41,34 @@ const Experience = () => {
               >
                 <h6 className="mb-2 font-semibold">
                   {experience.role} -{" "}
-                  <span className="text-sm text-purple-100">
+                  <span
+                    className={classNames("text-sm", {
+                      "text-purple-100": theme === "dark",
+                      "text-purple-700": theme === "light",
+                    })}
+                  >
                     {experience.company}
                   </span>
                 </h6>
-                <p className="mb-4 text-neutral-400">
+                <p
+                  className={classNames("mb-4", {
+                    "text-neutral-400": theme === "dark",
+                    "text-neutral-700": theme === "light",
+                  })}
+                >
                   {experience.description}
                 </p>
                 <div className="flex flex-wrap">
                   {experience.technologies.map((tech, index) => (
                     <span
                       key={index}
-                      className="mr-2 mb-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-600"
+                      className={classNames(
+                        "mr-2 mb-2 rounded px-2 py-1 text-sm font-medium text-purple-600",
+                        {
+                          "bg-neutral-900": theme === "dark",
+                          "bg-neutral-200 opacity-70": theme === "light",
+                        }
+                      )}
                     >
                       {tech}
                     </span>
