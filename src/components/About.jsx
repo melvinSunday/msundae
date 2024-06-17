@@ -1,7 +1,7 @@
 import about2 from "../assets/abtFinal2.png";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
-
+import "./About.css";
 const About = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
@@ -36,7 +36,7 @@ const About = () => {
         >
           <div className="flex justify-center lg:justify-start">
             <p
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
+              className="my-2 max-w-xl py-6 font-light tracking-tighter abt-p"
               style={{
                 fontSize: "1.2rem",
                 whiteSpace: "pre-wrap",

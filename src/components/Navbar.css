@@ -1,5 +1,12 @@
 @media (max-width: 410px) {
    .socmeds{
-    font-size: 1.3rem;
+    font-size: 1.3rem !important;
+
+   }
+
+   .container {
+    padding:20px !important;
+    padding-top: 0 !important;
    }
 }
+
