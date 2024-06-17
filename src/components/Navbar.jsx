@@ -52,7 +52,10 @@ const Navbar = ({ theme, toggleTheme }) => {
           {theme === "dark" ? (
             <FaSun className="text-yellow-500 transition-transform transform hover:scale-110" />
           ) : (
-            <FaMoon className="text-gray-800 transition-transform transform hover:scale-110" />
+            <FaMoon
+              className="text-gray-800 transition-transform transform hover:scale-110"
+              style={{ fontSize: "1.3rem" }}
+            />
           )}
         </button>
       </div>

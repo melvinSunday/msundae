@@ -1,4 +1,4 @@
-import about2 from "../assets/abtFinal2.png";
+import about2 from "../assets/abtFinal2.webp";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
 import "./About.css";
