@@ -4,7 +4,7 @@ import project3 from "../assets/projects/dg.png";
 import project4 from "../assets/projects/sdo.png";
 import project5 from "../assets/projects/ads.png";
 
-export const HERO_CONTENT = `I am a passionate freelance full stack web developer with great passion towards coding in HTML, CSS, JavaScript, Bootstrap, React JS, Tailwind CSS, PHP, and MySQL. I have expertise in creating interactive and reliable web applications that create a great user experience. Having a good blend of front end and back end skills, I help to build concepts into efficient and sustainable web applications.  `;
+export const HERO_CONTENT = `I am a passionate freelance full stack web developer with great passion towards coding in HTML, CSS, JavaScript, Bootstrap, React JS, Tailwind CSS, PHP, and MySQL. I possess proficient knowledge in creating interactive and reliable web applications that enhance user experiences. My skill set encompasses both front-end and back-end development, allowing me to translate conceptual ideas into efficient and sustainable web applications. `;
 
 export const ABOUT_TEXT = `
 My name is Melvin Giovanni B. Domingo, a 20-year-old second-year college student currently pursuing a Bachelor’s degree in Information Technology. My journey into programming began during a senior high school capstone project in 2022 when I discovered my interest in web development. This interest captivated me and made me curious, leading me to spend countless hours learning, developing, and experimenting with various aspects of web development.
