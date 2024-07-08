@@ -38,7 +38,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           <FaInstagram />
         </a>
         <a
-          href="https://www.linkedin.com/in/melvin-domingo-3ab6ba2a7/"
+          href="https://www.linkedin.com/in/melvin-giovanni-domingo-3ab6ba2a7/"
           target="_blank"
           rel="noopener noreferrer"
         >
