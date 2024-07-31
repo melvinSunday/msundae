@@ -52,7 +52,8 @@ export const PROJECTS = [
     url: "http://kalapay.shop/",
   },
   {
-    title: "Ofiicial Website of SDO Batanes",
+    note: "Please note that the current functionalities of this website have been modified by the current admin.",
+    title: "Official Website of SDO Batanes",
     image: project4,
     description:
       "Designed and developed the frontend of the official website for SDO Batanes using HTML, CSS, JavaScript, and Bootstrap.  This project highlights my proficiency in creating a responsive, user-friendly interface that effectively communicates essential information and resources. By integrating modern web technologies and design principles, I crafted a professional and accessible online presence for SDO Batanes.",
@@ -64,6 +65,7 @@ export const PROJECTS = [
       "Responsive Design",
     ],
     url: "https://depedbatanes.ph/vmcq.php",
+    hasNotebutton: true,
   },
   {
     title: "Online Enrollment System",
