@@ -6,6 +6,10 @@ import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { RiJavascriptFill } from "react-icons/ri";
 import { FaBootstrap } from "react-icons/fa6";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { BiLogoMongodb } from "react-icons/bi";
+import { IoLogoFirebase } from "react-icons/io5";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -102,6 +106,38 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <SiPhp className="text-7xl text-purple-400" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(6.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaNodeJs className="text-7xl text-[#84ba64]" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(7)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiExpress className="text-7xl text-white" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(7.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <BiLogoMongodb className="text-7xl text-green-700" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(7.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <IoLogoFirebase className="text-7xl text-[#FFB22C]" />
         </motion.div>
       </motion.div>
     </div>
