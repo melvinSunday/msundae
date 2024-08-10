@@ -35,9 +35,25 @@ const Tooltip = ({ text, position }) => {
         position: "fixed",
         pointerEvents: "none",
       }}
-      className="px-2 py-1 bg-black text-white text-sm rounded"
+      className="hidden sm:block px-2 py-1 bg-black text-white text-sm rounded"
     >
       {text}
+    </div>
+  );
+};
+
+const IconNameDisplay = ({ text, onClose }) => {
+  return (
+    <div className="sm:hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+      <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+        <h2 className="text-2xl font-bold mb-4">{text}</h2>
+        <button
+          onClick={onClose}
+          className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        >
+          Close
+        </button>
+      </div>
     </div>
   );
 };
@@ -48,6 +64,7 @@ const Technologies = () => {
     text: "",
     position: { x: 0, y: 0 },
   });
+  const [activeIcon, setActiveIcon] = useState("");
 
   const handleMouseMove = (e, text) => {
     setTooltip({
@@ -60,6 +77,28 @@ const Technologies = () => {
   const handleMouseLeave = () => {
     setTooltip({ visible: false, text: "", position: { x: 0, y: 0 } });
   };
+
+  const handleIconClick = (text) => {
+    setActiveIcon(text);
+  };
+
+  const handleClose = () => {
+    setActiveIcon("");
+  };
+
+  const renderIcon = (IconComponent, text, color, duration) => (
+    <motion.div
+      variants={iconVariants(duration)}
+      initial="initial"
+      animate="animate"
+      className="rounded-2xl border-4 border-neutral-800 p-4 cursor-pointer"
+      onMouseMove={(e) => handleMouseMove(e, text)}
+      onMouseLeave={handleMouseLeave}
+      onClick={() => handleIconClick(text)}
+    >
+      <IconComponent className={`text-7xl ${color}`} />
+    </motion.div>
+  );
 
   return (
     <div className="border-b border-neutral-800 pb-24">
@@ -77,129 +116,24 @@ const Technologies = () => {
         transition={{ duration: 1.5 }}
         className="flex flex-wrap items-center justify-center gap-4"
       >
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-          onMouseMove={(e) => handleMouseMove(e, "HTML5")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <FaHtml5 className="text-7xl text-orange-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-          onMouseMove={(e) => handleMouseMove(e, "CSS3")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <IoLogoCss3 className="text-7xl text-blue-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-          onMouseMove={(e) => handleMouseMove(e, "JavaScript")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <RiJavascriptFill className="text-7xl text-yellow-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-          onMouseMove={(e) => handleMouseMove(e, "ReactJS")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-          onMouseMove={(e) => handleMouseMove(e, "Tailwind CSS")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <RiTailwindCssLine className="text-7xl text-blue-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-          onMouseMove={(e) => handleMouseMove(e, "Bootstrap")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <FaBootstrap className="text-7xl text-violet-800" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(5.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-          onMouseMove={(e) => handleMouseMove(e, "MySQL")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <SiMysql className="text-7xl text-blue-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-          onMouseMove={(e) => handleMouseMove(e, "PHP")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <SiPhp className="text-7xl text-purple-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(6.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-          onMouseMove={(e) => handleMouseMove(e, "NodeJS")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <FaNodeJs className="text-7xl text-[#84ba64]" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(7)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-          onMouseMove={(e) => handleMouseMove(e, "ExpressJS")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <SiExpress className="text-7xl text-white" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(7.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-          onMouseMove={(e) => handleMouseMove(e, "MongoDB")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <BiLogoMongodb className="text-7xl text-green-700" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(7.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-          onMouseMove={(e) => handleMouseMove(e, "Firebase")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <IoLogoFirebase className="text-7xl text-[#FFB22C]" />
-        </motion.div>
+        {renderIcon(FaHtml5, "HTML5", "text-orange-500", 2.5)}
+        {renderIcon(IoLogoCss3, "CSS3", "text-blue-500", 3)}
+        {renderIcon(RiJavascriptFill, "JavaScript", "text-yellow-400", 3.5)}
+        {renderIcon(RiReactjsLine, "ReactJS", "text-cyan-400", 4)}
+        {renderIcon(RiTailwindCssLine, "Tailwind CSS", "text-blue-500", 4.5)}
+        {renderIcon(FaBootstrap, "Bootstrap", "text-violet-800", 5)}
+        {renderIcon(SiMysql, "MySQL", "text-blue-400", 5.5)}
+        {renderIcon(SiPhp, "PHP", "text-purple-400", 6)}
+        {renderIcon(FaNodeJs, "NodeJS", "text-[#84ba64]", 6.5)}
+        {renderIcon(SiExpress, "ExpressJS", "text-white", 7)}
+        {renderIcon(BiLogoMongodb, "MongoDB", "text-green-700", 7.5)}
+        {renderIcon(IoLogoFirebase, "Firebase", "text-[#FFB22C]", 7.5)}
       </motion.div>
       {tooltip.visible && (
         <Tooltip text={tooltip.text} position={tooltip.position} />
+      )}
+      {activeIcon && (
+        <IconNameDisplay text={activeIcon} onClose={handleClose} />
       )}
     </div>
   );
