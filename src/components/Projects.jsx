@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { GiClick } from "react-icons/gi";
 import classNames from "classnames";
 import Note from "./Note";
+import PropType from "prop-types";
 
 const Projects = ({ theme }) => {
   const [dropdown, setDropdown] = useState(false);
@@ -121,6 +122,9 @@ const Projects = ({ theme }) => {
       </div>
     </div>
   );
+};
+Projects.propTypes = {
+  theme: PropType.string.isRequired,
 };
 
 export default Projects;
