@@ -4,12 +4,12 @@ import project3 from "../assets/projects/dg.png";
 import project4 from "../assets/projects/sdo.png";
 import project5 from "../assets/projects/ads.png";
 
-export const HERO_CONTENT = `I am a passionate freelance full stack web developer with great passion towards coding in HTML, CSS, JavaScript, Bootstrap, React JS, Tailwind CSS, PHP, and MySQL. I possess proficient knowledge in creating interactive and reliable web applications that enhance user experiences. My skill set encompasses both front-end and back-end development, allowing me to translate conceptual ideas into efficient and sustainable web applications. `;
+export const HERO_CONTENT = `I am a passionate freelance full stack web developer specializing in creating interactive and reliable web applications. With a strong foundation in HTML, CSS, JavaScript, Bootstrap, React JS, Tailwind CSS, PHP, and MySQL, I enhance user experiences through proficient front-end and back-end development. My strength lies in my ability to translate conceptual ideas into efficient and sustainable web solutions. `;
 
 export const ABOUT_TEXT = `
 My name is Melvin Giovanni B. Domingo, a 20-year-old second-year college student currently pursuing a Bachelor’s degree in Information Technology. My journey into programming began during a senior high school capstone project in 2022 when I discovered my interest in web development. This interest captivated me and made me curious, leading me to spend countless hours learning, developing, and experimenting with various aspects of web development.
 
-Fast forward to today, I find myself fully immersed in the technology space, thoroughly enjoying it. I actively seek to improve my knowledge and skills across different technologies and try to gain as much experience as possible in this field. Therefore, my main goals are to improve professional competencies and create useful and efficient projects.
+Fast forward to today, I find myself fully immersed in the technology space, thoroughly enjoying it. I actively seek to improve my knowledge and skills across different technologies and try to gain as much experience as possible in this field. 
  
 
 `;

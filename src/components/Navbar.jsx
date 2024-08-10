@@ -1,8 +1,6 @@
-import React from "react";
-import logo from "../assets/kevinRushLogo.png";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaSun, FaMoon } from "react-icons/fa";
-import classNames from "classnames";
+import PropTypes from "prop-types";
 import "./Navbar.css";
 const Navbar = ({ theme, toggleTheme }) => {
   return (
@@ -61,6 +59,11 @@ const Navbar = ({ theme, toggleTheme }) => {
       </div>
     </nav>
   );
+};
+
+Navbar.propTypes = {
+  theme: PropTypes.string.isRequired,
+  toggleTheme: PropTypes.func.isRequired,
 };
 
 export default Navbar;
