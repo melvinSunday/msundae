@@ -35,7 +35,7 @@ const Tooltip = ({ text, position }) => {
         position: "fixed",
         pointerEvents: "none",
       }}
-      className="px-2 py-1 bg-black text-white text-sm rounded"
+      className="px-2 py-1 bg-black text-white text-sm rounded hidden xl:block"
     >
       {text}
     </div>
