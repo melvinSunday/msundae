@@ -97,10 +97,11 @@ const Projects = ({ theme }) => {
                   <span
                     key={index}
                     className={classNames(
-                      "mr-2 mb-2 rounded px-2 py-1 text-sm font-medium text-purple-600",
+                      "mr-2 mb-2 rounded px-2 py-1 text-sm font-medium text-white",
                       {
                         "bg-neutral-900": theme === "dark",
-                        "bg-neutral-200 opacity-70": theme === "light",
+                        "bg-neutral-200 opacity-70 text-black":
+                          theme === "light",
                       }
                     )}
                   >
@@ -112,7 +113,7 @@ const Projects = ({ theme }) => {
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-4 py-1 font-semibold text-white bg-purple-600 rounded hover:bg-purple-700 transition duration-300 ease-in-out"
+                className="inline-block px-4 py-1 font-semibold text-white bg-[#3C3D37] rounded hover:bg-[#1E201E] transition duration-300 ease-in-out"
               >
                 Take a look
               </a>
