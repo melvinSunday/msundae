@@ -42,7 +42,7 @@ const App = () => {
       className={classNames(
         "overflow-x-hidden overflow-y-auto antialiased selection:bg-cyan-300 selection:text-cyan-900 relative min-h-screen",
         {
-          "bg-transparent text-neutral-300": theme === "dark",
+          "text-neutral-300": theme === "dark",
           "bg-transparent text-neutral-900": theme === "light",
         }
       )}
@@ -53,15 +53,15 @@ const App = () => {
         <>
           {/* Background for Dark Mode */}
           {theme === "dark" && (
-            <div className="absolute top-0 left-0 z-[-2] h-full w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+            <div className="fixed inset-0 z-[-1] bg-[#111010]">
+              <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>
+            </div>
           )}
-
           {/* Background for Light Mode */}
           {theme === "light" && (
-            <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div className="fixed inset-0 z-[-1] bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
           )}
-
-          <div className="container mx-auto px-8 min-h-screen">
+          <div className="relative z-10 container mx-auto px-8 min-h-screen">
             <Navbar theme={theme} toggleTheme={toggleTheme} />
             <Hero />
             <About />
@@ -75,5 +75,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;
