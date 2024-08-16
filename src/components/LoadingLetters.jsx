@@ -16,8 +16,11 @@ const LoadingOverlay = () => {
           rel="stylesheet"
         />
       </Helmet>
-      <div className="fixed inset-0 flex flex-col items-center justify-center bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] z-50">
-        <div className="flex flex-row items-center justify-center gap-4 mb-[50px]">
+      <div className="fixed inset-0 flex flex-col items-center justify-center z-50">
+        <div className="absolute inset-0 bg-[#111010]">
+          <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#1E201E,transparent)]"></div>
+        </div>
+        <div className="flex flex-row items-center justify-center gap-4 mb-[50px] relative z-10">
           {["M", "E", "L", "V", "I", "N"].map((letter, index) => (
             <div
               key={index}
