@@ -29,10 +29,11 @@ const Hero = () => {
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent text-left sm:text-center lg:text-left"
+              className="text-transparent text-3xl tracking-tight text-left sm:text-center lg:text-left bg-clip-text bg-gradient-to-r from-gray-300 via-white to-gray-600"
             >
               Full Stack Developer
             </motion.span>
+
             <motion.p
               variants={container(1)}
               initial="hidden"
