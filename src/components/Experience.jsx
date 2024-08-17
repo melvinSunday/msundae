@@ -65,7 +65,7 @@ const Experience = ({ theme }) => {
                       className={classNames(
                         "mr-2 mb-2 rounded px-2 py-1 text-sm font-medium ",
                         {
-                          "bg-neutral-900 text-white": theme === "dark",
+                          "bg-neutral-800 text-white": theme === "dark",
                           "bg-neutral-200 opacity-70 text-black":
                             theme === "light",
                         }

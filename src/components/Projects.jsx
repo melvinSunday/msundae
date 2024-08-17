@@ -102,7 +102,7 @@ const Projects = ({ theme }) => {
                     className={classNames(
                       "mr-2 mb-2 rounded px-2 py-1 text-sm font-medium ",
                       {
-                        "bg-neutral-900 text-white": theme === "dark",
+                        "bg-neutral-800 text-white": theme === "dark",
                         "bg-neutral-200 opacity-70 text-black":
                           theme === "light",
                       }
@@ -123,8 +123,8 @@ const Projects = ({ theme }) => {
                     "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-800  dark:hover:bg-neutral-800"
                   )}
                 >
-                  <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                    <span> Take a look</span>
+                  <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-200 hover:duration-300 hover:dark:text-neutral-200">
+                    <spa> Take a look</spa>
                     <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                   </AnimatedShinyText>
                 </div>
