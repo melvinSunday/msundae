@@ -59,7 +59,7 @@ const App = () => {
           )}
           {/* Background for Light Mode */}
           {theme === "light" && (
-            <div className="fixed inset-0 z-[-1] bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div className="fixed inset-0 z-[-1] bg-[#fbf9f6] bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
           )}
           <div className="relative z-10 container mx-auto px-8 min-h-screen">
             <Navbar theme={theme} toggleTheme={toggleTheme} />
