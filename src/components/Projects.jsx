@@ -5,6 +5,9 @@ import { GiClick } from "react-icons/gi";
 import classNames from "classnames";
 import Note from "./Note";
 import PropType from "prop-types";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { cn } from "@/lib/utils";
+import AnimatedShinyText from "@/components/magicui/animated-shiny-text.jsx";
 
 const Projects = ({ theme }) => {
   const [dropdown, setDropdown] = useState(false);
@@ -92,7 +95,7 @@ const Projects = ({ theme }) => {
               >
                 {project.description}
               </p>
-              <div className="mb-4 flex flex-wrap">
+              <div className="mb-2 flex flex-wrap">
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
@@ -113,9 +116,18 @@ const Projects = ({ theme }) => {
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-4 py-1 font-semibold text-white bg-[#3C3D37] rounded hover:bg-[#1E201E] transition duration-300 ease-in-out"
+                className="inline-block font-semibold transition duration-300 ease-in-out"
               >
-                Take a look
+                <div
+                  className={cn(
+                    "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-800  dark:hover:bg-neutral-800"
+                  )}
+                >
+                  <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+                    <span> Take a look</span>
+                    <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+                  </AnimatedShinyText>
+                </div>
               </a>
             </motion.div>
           </div>

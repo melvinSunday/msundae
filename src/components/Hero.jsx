@@ -3,6 +3,7 @@ import { color, delay, motion } from "framer-motion";
 import profilePic from "../assets/profile4.webp";
 import BlurIn from "@/components/magicui/blur-in";
 import BlurFade from "@/components/magicui/blur-fade";
+
 import "./Hero.css";
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },

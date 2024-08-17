@@ -44,7 +44,7 @@ const Experience = ({ theme }) => {
                   <span
                     className={classNames("text-sm", {
                       "text-purple-100": theme === "dark",
-                      "text-purple-700": theme === "light",
+                      "text-black": theme === "light",
                     })}
                   >
                     {experience.company}
