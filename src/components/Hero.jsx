@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
-            <BlurFade delay={1.2} duration={1} inView blur="10px">
+            <BlurFade delay={1.2} duration={1} blur="10px">
               <img
                 className="rounded-2xl w-[500px] h-[500px] object-cover"
                 src={profilePic}
