@@ -65,7 +65,7 @@ const Projects = ({ theme }) => {
                   <button
                     ref={dropdownRef}
                     onClick={handleDropdown}
-                    className="bg-[#8C3061] p-2 py-1 rounded-[3px] flex items-center mb-2"
+                    className="bg-[#8C3061] p-2 py-1 rounded-[3px] flex items-center text-white mb-2"
                   >
                     Note <GiClick className="ml-1" />
                   </button>
@@ -76,7 +76,7 @@ const Projects = ({ theme }) => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3 }}
-                        className="absolute z-10 mt-2 bg-[#8C3061] shadow-lg rounded p-4"
+                        className="absolute z-10 mt-2 bg-[#8C3061] shadow-lg text-white rounded p-4"
                       >
                         <Note />
                       </motion.div>
@@ -97,9 +97,9 @@ const Projects = ({ theme }) => {
                   <span
                     key={index}
                     className={classNames(
-                      "mr-2 mb-2 rounded px-2 py-1 text-sm font-medium text-white",
+                      "mr-2 mb-2 rounded px-2 py-1 text-sm font-medium ",
                       {
-                        "bg-neutral-900": theme === "dark",
+                        "bg-neutral-900 text-white": theme === "dark",
                         "bg-neutral-200 opacity-70 text-black":
                           theme === "light",
                       }
