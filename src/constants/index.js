@@ -86,7 +86,7 @@ export const PROJECTS = [
     url: "http://melvinsunday.online/",
   },
   {
-    title: "Photgraphy Blog",
+    title: "Photography Blog",
     image: project2,
     description:
       "A personal project that showcases my passion for capturing moments through the lens. This static website, crafted with HTML, CSS, and JavaScript, reflects my journey as a photographer, featuring galleries of my work, insightful articles, and a glimpse into my creative process.",
