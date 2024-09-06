@@ -3,6 +3,7 @@ import project2 from "../assets/projects/pb2.jpg";
 import project3 from "../assets/projects/dg.png";
 import project4 from "../assets/projects/sdo.png";
 import project5 from "../assets/projects/ads.png";
+import project6 from "../assets/projects/todo.png";
 
 export const HERO_CONTENT = `I am a passionate freelance full stack web developer specializing in creating interactive and reliable web applications. With a strong foundation in HTML, CSS, JavaScript, Bootstrap, React JS, Tailwind CSS, PHP, and MySQL. I enhance user experiences through proficient front-end and back-end development. My strength lies in my ability to translate conceptual ideas into efficient and sustainable web solutions. `;
 
@@ -48,6 +49,7 @@ export const PROJECTS = [
       "Material UI",
       "Ant Design",
       "Responsive Design",
+      "Framer Motion",
     ],
     url: "http://kalapay.shop/",
   },
@@ -66,6 +68,22 @@ export const PROJECTS = [
     ],
     url: "https://depedbatanes.ph/vmcq.php",
     hasNotebutton: true,
+  },
+  {
+    title: "Todo App",
+    image: project6,
+    description:
+      "A React Todo App built with local storage for temporary task management, ensuring todos persist across sessions. Designed with Tailwind CSS for a fully responsive interface, and enhanced with Framer Motion to create fluid, interactive animations. This project highlights my skills in creating dynamic and user-friendly web applications.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Tailwind",
+      "Ant Design,
+      "Framer Motion",
+      "Responsive Design",
+      "Vite"
+    ],
+    url: "https://todo-listtt-chi.vercel.app/",
   },
   {
     title: "Online Enrollment System",

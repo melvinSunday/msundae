@@ -14,6 +14,7 @@ const Projects = ({ theme }) => {
   const dropdownRef = useRef(null);
 
   const handleDropdown = () => {
+    2;
     setDropdown(!dropdown);
   };
 
