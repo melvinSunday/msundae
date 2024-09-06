@@ -37,7 +37,7 @@ const App = () => {
     setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
   };
 
-  return ( 
+  return (
     <div
       className={classNames(
         "overflow-x-hidden overflow-y-auto antialiased selection:bg-cyan-300 selection:text-cyan-900 relative min-h-screen",
