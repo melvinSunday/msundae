@@ -78,7 +78,7 @@ export const PROJECTS = [
       "React",
       "JavaScript",
       "Tailwind",
-      "Ant Design,
+      "Ant Design",
       "Framer Motion",
       "Responsive Design",
       "Vite"
