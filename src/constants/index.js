@@ -81,7 +81,7 @@ export const PROJECTS = [
       "Ant Design",
       "Framer Motion",
       "Responsive Design",
-      "Vite"
+      "Vite",
     ],
     url: "https://todo-listtt-chi.vercel.app/",
   },
