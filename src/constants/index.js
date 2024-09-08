@@ -70,7 +70,7 @@ export const PROJECTS = [
     hasNotebutton: true,
   },
   {
-    title: "Todo App",
+    title: "To Do App",
     image: project6,
     description:
       "A React Todo App built with local storage for temporary task management, ensuring todos persist across sessions. Designed with Tailwind CSS for a fully responsive interface, and enhanced with Framer Motion to create fluid, interactive animations. This project highlights my skills in creating dynamic and user-friendly web applications.",
