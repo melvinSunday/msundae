@@ -90,7 +90,7 @@ export const PROJECTS = [
     title: "Pokédex",
     image: project7,
     description:
-      "This project showcases my skills in building dynamic web applications by fetching data from the PokéAPI. It features optimized performance using memoization techniques to minimize re-renders and improve loading times, especially when handling large datasets. The app is styled with Tailwind CSS for a clean, modern, and fully responsive design, ensuring a smooth experience on all devices. Infinite scrolling is implemented to display Pokémon data efficiently. This project highlights my expertise in API integration, optimization strategies, and responsive UI development",
+    "This project showcases my skills in building dynamic web applications by fetching data from the PokéAPI, implementing optimization strategies, and developing a responsive UI. It features optimized performance using memoization techniques to minimize re-renders and improve loading times, especially when handling large datasets. The app is styled with Tailwind CSS for a clean, modern, and fully responsive design, ensuring a smooth experience on all devices. Infinite scrolling is implemented to display Pokémon data efficiently.",
     technologies: [
       "React",
       "JavaScript",
