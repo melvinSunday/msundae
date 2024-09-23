@@ -4,6 +4,7 @@ import project3 from "../assets/projects/dg.png";
 import project4 from "../assets/projects/sdo.png";
 import project5 from "../assets/projects/ads.png";
 import project6 from "../assets/projects/todo.png";
+import project7 from "../assets/projects/pokedex.png";
 
 export const HERO_CONTENT = `I am a passionate freelance full stack web developer specializing in creating interactive and reliable web applications. With a strong foundation in HTML, CSS, JavaScript, Bootstrap, React JS, Tailwind CSS, PHP, and MySQL. I enhance user experiences through proficient front-end and back-end development. My strength lies in my ability to translate conceptual ideas into efficient and sustainable web solutions. `;
 
@@ -84,6 +85,24 @@ export const PROJECTS = [
       "Vite",
     ],
     url: "https://todo-listtt-chi.vercel.app/",
+  },
+  {
+    title: "Pokédex",
+    image: project7,
+    description:
+      "This project showcases my skills in building dynamic web applications by fetching data from the PokéAPI. It features optimized performance using memoization techniques to minimize re-renders and improve loading times, especially when handling large datasets. The app is styled with Tailwind CSS for a clean, modern, and fully responsive design, ensuring a smooth experience on all devices. Infinite scrolling is implemented to display Pokémon data efficiently. This project highlights my expertise in API integration, optimization strategies, and responsive UI development",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Tailwind",
+      "Ant Design",
+      "Framer Motion",
+      "Responsive Design",
+      "Vite",
+      "Lazy Loading",
+      "Lodash",
+    ],
+    url: "https://pokedex-av7q.vercel.app",
   },
   {
     title: "Online Enrollment System",
