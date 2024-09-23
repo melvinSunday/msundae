@@ -55,7 +55,7 @@ export const PROJECTS = [
     url: "http://kalapay.shop/",
   },
   {
-    note: "Please note that the current functionalities of this website have been modified by the current admin.",
+    note: "Please note that the current functionalities of this website are now managed by the current admin, and are beyond my control.",
     title: "Official Website of SDO Batanes",
     image: project4,
     description:
@@ -70,22 +70,7 @@ export const PROJECTS = [
     url: "https://depedbatanes.ph/vmcq.php",
     hasNotebutton: true,
   },
-  {
-    title: "To Do App",
-    image: project6,
-    description:
-      "A React Todo App built with local storage for temporary task management, ensuring todos persist across sessions. Designed with Tailwind CSS for a fully responsive interface, and enhanced with Framer Motion to create fluid, interactive animations. This project highlights my skills in creating dynamic and user-friendly web applications.",
-    technologies: [
-      "React",
-      "JavaScript",
-      "Tailwind",
-      "Ant Design",
-      "Framer Motion",
-      "Responsive Design",
-      "Vite",
-    ],
-    url: "https://todo-listtt-chi.vercel.app/",
-  },
+  
   {
     title: "Pokédex",
     image: project7,
@@ -103,6 +88,22 @@ export const PROJECTS = [
       "Lodash",
     ],
     url: "https://pokedex-av7q.vercel.app",
+  },
+  {
+    title: "To Do App",
+    image: project6,
+    description:
+      "A React Todo App built with local storage for temporary task management, ensuring todos persist across sessions. Designed with Tailwind CSS for a fully responsive interface, and enhanced with Framer Motion to create fluid, interactive animations. This project highlights my skills in creating dynamic and user-friendly web applications.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Tailwind",
+      "Ant Design",
+      "Framer Motion",
+      "Responsive Design",
+      "Vite",
+    ],
+    url: "https://todo-listtt-chi.vercel.app/",
   },
   {
     title: "Online Enrollment System",
