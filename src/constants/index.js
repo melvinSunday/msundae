@@ -5,6 +5,8 @@ import project4 from "../assets/projects/sdo.png";
 import project5 from "../assets/projects/ads.png";
 import project6 from "../assets/projects/todo.png";
 import project7 from "../assets/projects/pokedex.png";
+import project8 from "../assets/projects/text-to-emotion.png";
+
 
 export const HERO_CONTENT = `I am a passionate freelance full stack web developer specializing in creating interactive and reliable web applications. With a strong foundation in HTML, CSS, JavaScript, Bootstrap, React JS, Tailwind CSS, PHP, and MySQL. I enhance user experiences through proficient front-end and back-end development. My strength lies in my ability to translate conceptual ideas into efficient and sustainable web solutions. `;
 
@@ -88,6 +90,21 @@ export const PROJECTS = [
       "Lodash",
     ],
     url: "https://pokedex-av7q.vercel.app",
+  },
+
+  {
+    title: "Text to Emotion",
+    image: project8,
+    description:
+    "This project is a web application that allows users to analyze the emotional tone of their text. It leverages an external API to classify the emotional state of the text into one of four categories: happy, sad, angry, or neutral. The application is built with Next.js, JavaScript, and Tailwind CSS, integrating seamlessly with the emotion analysis API. It features a user-friendly interface that allows users to input their text and receive an analysis of the emotional tone. The application is designed to be easy to use and understand, with clear instructions and feedback for the user. By utilizing a robust API for emotion classification, the app provides accurate and reliable results. It is a useful tool for anyone who wants to understand the emotional tone of their text, and can be used for a variety of purposes, such as self-reflection, therapy, or simply gaining insight into the emotional state of their text.",
+    technologies: [
+      "Next.js",
+      "JavaScript", 
+      "Tailwind",
+      "Responsive Design",
+      "Lazy Loading",
+    ],
+    url: "https://text-to-emotion-tau.vercel.app/",
   },
   {
     title: "To Do App",
