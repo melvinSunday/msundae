@@ -8,14 +8,14 @@ import project7 from "../assets/projects/pokedex.png";
 import project8 from "../assets/projects/text-to-emotion.png";
 
 
-export const HERO_CONTENT = `I am a passionate freelance full stack web developer specializing in creating interactive and reliable web applications. With a strong foundation in HTML, CSS, JavaScript, Bootstrap, React JS, Tailwind CSS, PHP, and MySQL. I enhance user experiences through proficient front-end and back-end development. My strength lies in my ability to translate conceptual ideas into efficient and sustainable web solutions. `;
+export const HERO_CONTENT = `
+I am a passionate freelance full stack web developer specializing in creating interactive and reliable web applications. With a strong foundation in HTML, CSS, JavaScript, Bootstrap, React JS, Tailwind CSS, PHP, and MySQL, I enhance user experiences through proficient front-end and back-end development. My strength lies in my ability to translate conceptual ideas into efficient and sustainable web solutions.
+`;
 
 export const ABOUT_TEXT = `
-I am Melvin Giovanni B. Domingo, a 20-year-old third-year college student currently pursuing a Bachelor’s degree in Information Technology. My journey into programming began during a senior high school capstone project in 2022 when I discovered my interest in web development. This interest captivated me and made me curious, leading me to spend countless hours learning, developing, and experimenting with various aspects of web development.
+I am Melvin Giovanni B. Domingo, a 20-year-old third-year college student currently pursuing a Bachelor's degree in Information Technology. My journey into programming began during a senior high school capstone project in 2022 when I discovered my interest in web development. This interest captivated me and made me curious, leading me to spend countless hours learning, developing, and experimenting with various aspects of web development.
 
-Fast forward to today, I find myself fully immersed in the technology space, thoroughly enjoying it. I actively seek to improve my knowledge and skills across different technologies and try to gain as much experience as possible in this field. 
- 
-
+Fast forward to today, I find myself fully immersed in the technology space, thoroughly enjoying it. I actively seek to improve my knowledge and skills across different technologies and try to gain as much experience as possible in this field.
 `;
 
 export const EXPERIENCES = [
@@ -23,14 +23,18 @@ export const EXPERIENCES = [
     year: "May - Jun 2024",
     role: "Full-Stack Developer (Project)",
     company: "Batanes State College (HTM)",
-    description: `Designed and developed an e-commerce website in partnership with the HTM Department to showcase authentic Ivatan products. I managed everything from creating an aesthetic, user-friendly interface to setting up the backend systems. The site highlights the unique culture of the Ivatans and offers a secure, easy shopping experience. This experience demonstrates my skills in full-stack development and my ability to create effective, intuitive, responsive e-commerce websites.`,
+    description: `
+      Designed and developed an e-commerce website in partnership with the HTM Department to showcase authentic Ivatan products. I managed everything from creating an aesthetic, user-friendly interface to setting up the backend systems. The site highlights the unique culture of the Ivatans and offers a secure, easy shopping experience. This experience demonstrates my skills in full-stack development and my ability to create effective, intuitive, responsive e-commerce websites.
+    `,
     technologies: ["React", "CSS", "Tailwind", "JavaScript", "PHP", "mySQL"],
   },
   {
     year: "April - May 2022",
     role: "Front-End Developer (Capstone)",
     company: "DepED Batanes",
-    description: `Designed and developed the user interface of the website, ensuring an intuitive, user-friendly, and engaging experience. Leveraging my skills in HTML, CSS, and JavaScript, I collaborated closely with our team to translate requirements into functional and visually appealing web pages. This experience allowed me to enhance my proficiency in frontend technologies while contributing to a project aimed at improving online transparency for the Department of Education in the Batanes region.`,
+    description: `
+      Designed and developed the user interface of the website, ensuring an intuitive, user-friendly, and engaging experience. Leveraging my skills in HTML, CSS, and JavaScript, I collaborated closely with our team to translate requirements into functional and visually appealing web pages. This experience allowed me to enhance my proficiency in frontend technologies while contributing to a project aimed at improving online transparency for the Department of Education in the Batanes region.
+    `,
     technologies: ["HTML", "CSS", "JavaScript"],
   },
 ];
@@ -39,7 +43,9 @@ export const PROJECTS = [
   {
     title: "Kalapay E-Commerce Website",
     image: project1,
-    description: `This project is a fully functional e-commerce website, showcasing features like User Authentication, Shopping Cart, Checkout Process, Order Management, Admin Panel, Responsive Design and many more. The frontend is developed using React, JavaScript, Tailwind CSS, and additional custom CSS, ensuring a seamless and responsive user experience. Axios is utilized for API requests to a backend powered by PHP and a MySQL database, facilitating robust data handling and server interactions. This comprehensive solution provides a complete and efficient e-commerce platform.`,
+    description: `
+      This project is a fully functional e-commerce website, showcasing features like User Authentication, Shopping Cart, Checkout Process, Order Management, Admin Panel, Responsive Design and many more. The frontend is developed using React, JavaScript, Tailwind CSS, and additional custom CSS, ensuring a seamless and responsive user experience. Axios is utilized for API requests to a backend powered by PHP and a MySQL database, facilitating robust data handling and server interactions. This comprehensive solution provides a complete and efficient e-commerce platform.
+    `,
     technologies: [
       "React",
       "JavaScript",
@@ -60,8 +66,9 @@ export const PROJECTS = [
     note: "Please note that the current functionalities of this website are now managed by the current admin, and are beyond my control.",
     title: "Official Website of SDO Batanes",
     image: project4,
-    description:
-      "Designed and developed the frontend of the official website for SDO Batanes using HTML, CSS, JavaScript, and Bootstrap.  This project highlights my proficiency in creating a responsive, user-friendly interface that effectively communicates essential information and resources. By integrating modern web technologies and design principles, I crafted a professional and accessible online presence for SDO Batanes.",
+    description: `
+      Designed and developed the frontend of the official website for SDO Batanes using HTML, CSS, JavaScript, and Bootstrap. This project highlights my proficiency in creating a responsive, user-friendly interface that effectively communicates essential information and resources. By integrating modern web technologies and design principles, I crafted a professional and accessible online presence for SDO Batanes.
+    `,
     technologies: [
       "HTML",
       "CSS",
@@ -76,8 +83,9 @@ export const PROJECTS = [
   {
     title: "Pokédex",
     image: project7,
-    description:
-    "This project showcases my skills in building dynamic web applications by fetching data from the PokéAPI, implementing optimization strategies, and developing a responsive UI. It features optimized performance using memoization techniques to minimize re-renders and improve loading times, especially when handling large datasets. The app is styled with Tailwind CSS for a clean, modern, and fully responsive design, ensuring a smooth experience on all devices. Infinite scrolling is implemented to display Pokémon data efficiently.",
+    description: `
+      This project showcases my skills in building dynamic web applications by fetching data from the PokéAPI, implementing optimization strategies, and developing a responsive UI. It features optimized performance using memoization techniques to minimize re-renders and improve loading times, especially when handling large datasets. The app is styled with Tailwind CSS for a clean, modern, and fully responsive design, ensuring a smooth experience on all devices. Infinite scrolling is implemented to display Pokémon data efficiently.
+    `,
     technologies: [
       "React",
       "JavaScript",
@@ -95,8 +103,13 @@ export const PROJECTS = [
   {
     title: "Text to Emotion",
     image: project8,
-    description:
-    "This project is a web application that allows users to analyze the emotional tone of their text. It leverages an external API to classify the emotional state of the text into one of four categories: happy, sad, angry, or neutral. The application is built with Next.js, JavaScript, and Tailwind CSS, integrating seamlessly with the emotion analysis API. It features a user-friendly interface that allows users to input their text and receive an analysis of the emotional tone. The application is designed to be easy to use and understand, with clear instructions and feedback for the user. By utilizing a robust API for emotion classification, the app provides accurate and reliable results. It is a useful tool for anyone who wants to understand the emotional tone of their text, and can be used for a variety of purposes, such as self-reflection, therapy, or simply gaining insight into the emotional state of their text.",
+    description: `
+      This project is a web application that allows users to analyze the emotional tone of their text. It leverages an external API to classify the emotional state of the text into one of four categories: happy, sad, angry, or neutral. The application is built with Next.js, JavaScript, and Tailwind CSS, integrating seamlessly with the emotion analysis API.
+
+      It features a user-friendly interface that allows users to input their text and receive an analysis of the emotional tone. The application is designed to be easy to use and understand, with clear instructions and feedback for the user. By utilizing a robust API for emotion classification, the app provides accurate and reliable results.
+
+      It is a useful tool for anyone who wants to understand the emotional tone of their text, and can be used for a variety of purposes, such as self-reflection, therapy, or simply gaining insight into the emotional state of their text.
+    `,
     technologies: [
       "Next.js",
       "JavaScript", 
@@ -109,8 +122,9 @@ export const PROJECTS = [
   {
     title: "To Do App",
     image: project6,
-    description:
-      "A React Todo App built with local storage for temporary task management, ensuring todos persist across sessions. Designed with Tailwind CSS for a fully responsive interface, and enhanced with Framer Motion to create fluid, interactive animations. This project highlights my skills in creating dynamic and user-friendly web applications.",
+    description: `
+      A React Todo App built with local storage for temporary task management, ensuring todos persist across sessions. Designed with Tailwind CSS for a fully responsive interface, and enhanced with Framer Motion to create fluid, interactive animations. This project highlights my skills in creating dynamic and user-friendly web applications.
+    `,
     technologies: [
       "React",
       "JavaScript",
@@ -125,8 +139,9 @@ export const PROJECTS = [
   {
     title: "Online Enrollment System",
     image: project5,
-    description:
-      "A comprehensive solution built with a modern tech stack. For the frontend, I used React, Tailwind CSS, JavaScript, and CSS to create a dynamic and responsive user interface. Axios handles API requests to the backend, which is powered by PHP and MySQL. This project demonstrates my ability to develop a full-fledged application that streamlines the enrollment process, ensuring a seamless experience for users",
+    description: `
+      A comprehensive solution built with a modern tech stack. For the frontend, I used React, Tailwind CSS, JavaScript, and CSS to create a dynamic and responsive user interface. Axios handles API requests to the backend, which is powered by PHP and MySQL. This project demonstrates my ability to develop a full-fledged application that streamlines the enrollment process, ensuring a seamless experience for users.
+    `,
     technologies: [
       "React",
       "JavaScript",
@@ -143,16 +158,18 @@ export const PROJECTS = [
   {
     title: "Photography Blog",
     image: project2,
-    description:
-      "A personal project that showcases my passion for capturing moments through the lens. This static website, crafted with HTML, CSS, and JavaScript, reflects my journey as a photographer, featuring galleries of my work, insightful articles, and a glimpse into my creative process.",
+    description: `
+      A personal project that showcases my passion for capturing moments through the lens. This static website, crafted with HTML, CSS, and JavaScript, reflects my journey as a photographer, featuring galleries of my work, insightful articles, and a glimpse into my creative process.
+    `,
     technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     url: "https://melvinsunday.github.io/PhotographyBlog/",
   },
   {
     title: "Domingo's Restaurant",
     image: project3,
-    description:
-      "A reverse-engineered project I built from scratch to test and enhance my web development skills using HTML, CSS, and JavaScript. This site features a sleek design, an interactive menu, and essential information, enhancing the dining experience.",
+    description: `
+      A reverse-engineered project I built from scratch to test and enhance my web development skills using HTML, CSS, and JavaScript. This site features a sleek design, an interactive menu, and essential information, enhancing the dining experience.
+    `,
     technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     url: "https://melvinsunday.github.io/Domingo-s/",
   },

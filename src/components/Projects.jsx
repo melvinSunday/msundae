@@ -11,10 +11,11 @@ import AnimatedShinyText from "@/components/magicui/animated-shiny-text.jsx";
 
 const Projects = ({ theme }) => {
   const [dropdown, setDropdown] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
   const dropdownRef = useRef(null);
 
   const handleDropdown = () => {
-    2;
     setDropdown(!dropdown);
   };
 
@@ -30,6 +31,16 @@ const Projects = ({ theme }) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const handleSeeMore = (project) => {
+    setSelectedProject(project);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setSelectedProject(null);
+  };
 
   return (
     <div className="border-b border-neutral-900 pb-4">
@@ -89,12 +100,22 @@ const Projects = ({ theme }) => {
                 </div>
               )}
               <p
-                className={classNames("mb-4", {
+                className={classNames("mb-4 text-justify", {
                   "text-neutral-400": theme === "dark",
                   "text-neutral-700": theme === "light",
                 })}
               >
-                {project.description}
+                {project.description.length > 350
+                  ? `${project.description.slice(0, 350)}... `
+                  : project.description}
+                {project.description.length > 350 && (
+                  <button
+                    onClick={() => handleSeeMore(project)}
+                    className="text-blue-500 hover:underline ml-1"
+                  >
+                    See more
+                  </button>
+                )}
               </p>
               <div className="mb-2 flex flex-wrap">
                 {project.technologies.map((tech, index) => (
@@ -125,7 +146,7 @@ const Projects = ({ theme }) => {
                   )}
                 >
                   <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-200 hover:duration-300 hover:dark:text-neutral-200">
-                    <spa> Take a look</spa>
+                    <span> Take a look</span>
                     <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                   </AnimatedShinyText>
                 </div>
@@ -134,9 +155,49 @@ const Projects = ({ theme }) => {
           </div>
         ))}
       </div>
+      <AnimatePresence>
+        {modalOpen && selectedProject && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+            onClick={closeModal}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ type: "spring", damping: 20, stiffness: 300 }}
+              className="bg-white dark:bg-neutral-800 p-8 rounded-lg max-w-2xl w-full m-4 shadow-xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h2 className="text-3xl font-bold mb-4 text-neutral-900 dark:text-white">{selectedProject.title}</h2>
+              <p className="mb-6 text-neutral-700 dark:text-neutral-300">{selectedProject.description}</p>
+              <div className="flex justify-between items-center">
+                <a
+                  href={selectedProject.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition duration-300"
+                >
+                  Visit Project
+                </a>
+                <button
+                  onClick={closeModal}
+                  className="text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200 transition duration-300"
+                >
+                  Close
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
+
 Projects.propTypes = {
   theme: PropType.string.isRequired,
 };

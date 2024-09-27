@@ -51,7 +51,7 @@ const Experience = ({ theme }) => {
                   </span>
                 </h6>
                 <p
-                  className={classNames("mb-4", {
+                  className={classNames("mb-4 text-justify", {
                     "text-neutral-400": theme === "dark",
                     "text-neutral-700": theme === "light",
                   })}
